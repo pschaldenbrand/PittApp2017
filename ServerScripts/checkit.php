@@ -12,7 +12,8 @@ and open the template in the editor.
     <body>
         <?php
         echo "<h2>wow</h2>";
-        $conn = mysql_connect("localhost", "ishvaraus", "i3329700") or die (mysql_error());
+        //In Javascript you may need to use ip address instead of localhost to connect, here it is: 107.180.41.47
+        $conn = mysql_connect("localhost", "Petes", "pittsburgh") or die (mysql_error());
         echo "<h1>wowzers</h1>";
         mysql_select_db("MobileAppChallenge",$conn);
         $query = "CREATE TABLE IF NOT EXISTS VERIFIED(
