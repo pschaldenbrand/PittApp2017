@@ -4,19 +4,45 @@
 	<style>
 	body{
 		background-color:lightblue;
-		font-size: 300%;
+	}
+	.yo{
 		margin-top: 30%;
 		text-align: center;
+		font-size: 300%;
 	}
+	
+	
 	</style>
+		<link rel="stylesheet" type="text/css" href="css/classChat.css">
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Blank App</title>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     </head>
     <body>
 	
-	Pitt App Challenge 2017
-	
-        <script type="text/javascript" src="cordova.js"></script>
+	<div class="yo">Pitt App a; Challenge 2017</div>
+	<div style="margin: 10% 20%">
+		<form>
+		Please enter your pitt email and password:</br>
+		<input type="text" name="Email" value="Pitt email"></br>
+		<input type="password" name="Password" value="password"></br>
+		<input type="submit" value="Login" :)>
+		</form>
+	</div>
+	<div id="signup">
+		<button> Sign up! </button>
+	<div>
+	<script>
+	$("input").click(function(){
+		$(this).attr("value","");
+		});
+	$(document).ready(function(){
+		$("#signup").click(function(){
+			window.location.href = "signup/signup.html";
+		});
+	});
+    </script>
     </body>
 </html>
