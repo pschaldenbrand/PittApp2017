@@ -22,27 +22,37 @@
     </head>
     <body>
 	
-	<div class="yo">Pitt App a; Challenge 2017</div>
+	<div class="yo">Pitt App Challenge 2017</div>
 	<div style="margin: 10% 20%">
 		<form>
 		Please enter your pitt email and password:</br>
-		<input type="text" name="Email" value="Pitt email"></br>
-		<input type="password" name="Password" value="password"></br>
-		<input type="submit" value="Login" :)>
+		<input type="text" name="Email" value="Pitt email" id="email"></br>
+		<input type="password" name="Password" value="password" id="password"></br>
+		<!--<input type="submit" value="Login" id="login">-->
+		
 		</form>
+		<button id="login">login</button>
 	</div>
 	<div id="signup">
 		<button> Sign up! </button>
 	<div>
 	<script>
-	$("input").click(function(){
-		$(this).attr("value","");
+	$("#email,#password").click(function(){
+		$(this).attr("value",""); 
 		});
 	$(document).ready(function(){
 		$("#signup").click(function(){
 			window.location.href = "signup/signup.html";
 		});
+		$("#login").click(function(){
+			//ToDo: PUT AUTHENTICATION SHIT HERE
+			var email = $("#email").val();
+			localStorage.emailAdd = email;
+			
+			//console.log("clicked login");
+			window.location.href = "home/home.html?"+email;
+		});
 	});
-    </script>
+    </script> 
     </body>
 </html>

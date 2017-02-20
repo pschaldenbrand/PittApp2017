@@ -22,9 +22,11 @@
     </head>
     <body>
 	
+	<script>makeHeader("../js/head.html");</script>
+	
 	<form style="margin-top:20%">
 		Pick a username:</br>
-		<input type="text" name="Username" value="dUsername"></br>
+		<input type="text" name="Username" value="Username"></br>
 		Please enter your pitt email:</br>
 		<input type="text" name="Email" value="Pitt email"></br>
 		Pick a password:</br>
@@ -33,6 +35,12 @@
 		<input type="submit" value="Login">
 	</form>
 	
-    <script>makeHeader("../js/head.html");</script>
+    <script>
+	$(document).ready(function(){
+		//makeHeader("../js/head.html");
+		setBackPage("../index.html");
+	});
+	</script>
+	
     </body>
 </html>

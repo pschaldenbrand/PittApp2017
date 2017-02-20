@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="../js/classChat.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/classChat.css">
+	<style>
+		
+		#options{
+			margin: 5% 5%;
+		}
+		#manageClasses{
+			width: 30%;
+		} 
+		#toSettings{
+			width: 30%;
+		}
+		#toProfile{
+			width: 30%;
+		}
+		#options button{
+			border-radius:1%;
+			background-color: lightyellow;
+			height: 3em;
+			margin: 1% 0%;
+			display: inline-block;
+			vertical-align:text-top;
+		}
+	</style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>classchat</title>
+    </head>
+    <body>
+	
+	<script>makeHeader("../js/head.html");//gotta do this early</script>
+	
+	<div id="options">
+		<button id="manageClasses">Manage </br> Classes</button>
+		<button id="toSettings">Settings</br> </button>
+		<button id="toProfile">View</br>Profile</button>
+	
+	</div>
+	</br>
+	
+	
+	<div id="classList">
+	My Classes:
+	<table id="classTable">
+		<tr><td> class #1 </td></tr>
+		<tr><td> class #2 </td></tr>
+		<tr><td> add JS </td></tr>
+	</table>
+	</div>
+	
+	
+	
+    <script>
+	$(document).ready(function(){
+		setBackPage("../index.html");
+		onHomePage();
+		//localStorage.emailAdd to access email address
+				
+		
+		$("#manageClasses").click(function(){
+			//Add js to go to other page
+		});
+		$("#toSettings").click(function(){
+			window.location.href = "settings.html";
+		});
+		$("#toProfile").click(function(){
+			//Add js to go to other page
+		});
+		
+		$
+	});
+	</script>
+	
+    </body>
+</html>

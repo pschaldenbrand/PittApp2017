@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- might be included already
+	<script type="text/javascript" src="cordova.js"></script>-->
+	<script type="text/javascript" src="../js/classChat.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/classChat.css">
+	<style>
+	#searchBar{
+		width: 90%;
+		margin: 5% 5%;
+		border-readius: 5px;
+	}
+	#classListings{
+		background-color:yellow;
+	}
+	</style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>classchat</title>
+    </head>
+    <body>
+	
+	<script>makeHeader("../js/head.html");//gotta do this early</script>
+	
+	
+	<input type="text" id="searchBar" value="Search by 5 digit class number">
+	
+	<table id="classListings">
+	
+	
+	<table>
+	
+    <script>
+	$(document).ready(function(){
+		setBackPage("settings.html");
+		//localStorage.emailAdd to access email address
+		
+		$("#searchForClasses").click(function(){
+			//get results from search in server
+			//display the results in the table
+		}
+	});
+	</script>
+	
+    </body>
+</html>

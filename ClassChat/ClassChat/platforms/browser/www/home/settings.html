@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- might be included already
+	<script type="text/javascript" src="cordova.js"></script>-->
+	<script type="text/javascript" src="../js/classChat.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/classChat.css">
+	<style>
+	#addClasses{
+		right:5%;
+		position:absolute;
+		width:30%;
+		height: 3em;
+		font-size: 150%;
+		text-align:left;
+	}
+	#classList{
+		margin-top: 5em;
+	}
+	</style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>classchat</title>
+    </head>
+    <body>
+	
+	<script>makeHeader("../js/head.html");//gotta do this early</script>
+	
+	<p><button id="addClasses">Add Classes</button></p>
+	</br>
+	
+	
+	<div id="classList">
+	My Classes:
+	<table id="classTable">
+		<tr><td> class #1 </td></tr>
+		<tr><td> class #2 </td></tr>
+		<tr><td> add JS </td></tr>
+	</table>
+	</div>
+	
+	
+	
+    <script>
+	$(document).ready(function(){
+		setBackPage("home.html");
+		//localStorage.emailAdd to access email address
+		
+		$("#addClasses").click(function(){
+			window.location.href = "addClasses.html";
+		});
+	});
+	</script>
+	
+    </body>
+</html>

@@ -14,8 +14,22 @@ function makeHeader(path){
 	//console.log((h/10)+"px");
 	//$("#head").css("height",(h/10)+"px");
 }
+var backPath;
 function setBackPage(path){
+	backPath = path;
+	console.log("in setback");
 	$("#back").click(function(){
-		window.location.href = path;
+		console.log("going back"+backPath);
+		window.location.href = backPath;
+	});
+}
+
+function onHomePage(){
+	$("#back").html("Logout");
+	$("#back").click(function(){
+		//add logout stuff to this button
+		//also might be able to get away with just:
+		localStorage.emailAdd = undefined;
+		//and other variables cleared
 	});
 }
